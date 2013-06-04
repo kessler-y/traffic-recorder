@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var logger = require('log4js').getLogger('server');
 
 var optimist = require('optimist')	

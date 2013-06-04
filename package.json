@@ -23,7 +23,8 @@
         "url": "https://raw.github.com/yanush/traffic-recorder/master/LICENSE"
         }
     ],
-    "dependencies": {        
+    "dependencies": {
+        "daemonize2":           "*",
     	"async":                "*",
         "optimist":             "*",
         "config-chain":         "*",
