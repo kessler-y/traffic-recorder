@@ -12,7 +12,7 @@
         "url": "http://github.com/yanush/traffic-recorder.git"
     },
     "bin": { 
-        "traffic-recorder": "./index.js"
+        "traffic-recorder": "./server.js"
     },
     "bugs": {
         "url": "http://github.com/yanush/traffic-recorder/issues"
