@@ -4,6 +4,7 @@ var domain = require('domain');
 http.globalAgent.maxSockets = 200;
 
 var port = process.argv[2];
+var rowSize = process.argv[3] || 6000;
 
 console.log('port is %s', port);
 
@@ -25,12 +26,12 @@ var where = {
 	method: 'POST'
 }
 
-for (var i = 0; i < 100; i++) {
+for (var i = 0; i < 50; i++) {
 	send(where, i);
 }
 
 setTimeout(function() {
-	for (var i = 100; i < 200; i++) {
+	for (var i = 50; i < 100; i++) {
 		send(where, i);
 	}
 
@@ -66,10 +67,14 @@ function send(where, i) {
 		requests++;	
 	});
 
+
 	var data = '';
 
-	for (var x = 0; x < 1000; x++) {
-		data += ' data'+ i + x; 
+	for (var x = 0; x < rowSize; x++) {
+		if (x > 0)
+			data += ',';
+
+		data += i + '-' + x; 
 	}
 
 	data += '\n';

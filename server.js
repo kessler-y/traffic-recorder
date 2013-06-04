@@ -14,7 +14,7 @@ var optimist = require('optimist')
 	})
 	.option('logDirectory', {
 		alias: 'logdir',
-		default: '../',
+		default: './logs',
 		describe: '\n\nLocation of logs.\nEach server invocation will be create a log file in the form of traffic-<timestamp>.log\n\n'
 	})
 	.options('logFile', {
