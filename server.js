@@ -36,5 +36,5 @@ if (argv.help) {
 var recorder = require('./index').create(argv.transport);
 
 recorder.listen(argv.port, function(){
-	logger.info('Recorder is listening...');
+	logger.info('Recorder is listening on port %s...', argv.port);
 });
