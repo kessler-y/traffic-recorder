@@ -1,6 +1,6 @@
 {
     "name": "traffic-recorder",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A server the logs all incoming data to a file",
     "main": "lib/index.js",    
     "keywords": ["traffic", "web"],
@@ -9,18 +9,18 @@
     },
     "repository": {
         "type": "git",
-        "url": "http://github.com/yanush/traffic-recorder.git"
+        "url": "http://github.com/kessler-y/traffic-recorder.git"
     },
     "bin": { 
         "traffic-recorder": "server.js"
     },
     "bugs": {
-        "url": "http://github.com/yanush/traffic-recorder/issues"
+        "url": "http://github.com/kessler-y/traffic-recorder/issues"
     },
     "licenses": [
         {
         "type": "MIT",
-        "url": "https://raw.github.com/yanush/traffic-recorder/master/LICENSE"
+        "url": "https://raw.github.com/kessler-y/traffic-recorder/master/LICENSE"
         }
     ],
     "dependencies": {        
