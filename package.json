@@ -1,6 +1,6 @@
 {
     "name": "traffic-recorder",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A server the logs all incoming data to a file",
     "main": "lib/index.js",    
     "keywords": ["traffic", "web"],
